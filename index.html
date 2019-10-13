@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="myslide.css">
+    <script type="text/javascript" src="jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="myslide.js"></script>
+    <style>
+        .w{
+            width: 1200px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="w slide" id="slide"></div>
+</body>
+<script>
+    $(function () {
+        var json = [
+            {
+                "src": "./images/slide_img/1.png"
+            },
+            {
+                "src": "./images/slide_img/2.png"
+            },
+            {
+                "src": "./images/slide_img/3.png"
+            },
+            {
+                "src": "./images/slide_img/4.png"
+            },
+            {
+                "src": "./images/slide_img/5.png"
+            },
+            {
+                "src": "./images/slide_img/6.png"
+            },
+            {
+                "src": "./images/slide_img/7.png"
+            },
+            {
+                "src": "./images/slide_img/8.png"
+            }
+        ];
+        $('#slide').slideshow(json,true,3000)
+    });
+</script>
+</html>
